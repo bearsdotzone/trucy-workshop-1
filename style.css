@@ -1,0 +1,26 @@
+body {
+  background-color: #deadbeef;
+  color: #2b2b2b;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.fancy {
+  background-color: #2b2b2b2b;
+  font-size: 200%;
+
+  /* CSS uses a different style for commenting but the function is the same. */
+  /* Hereafter is a little bonus styling not covered in the workshop. */
+  border-radius: 10px;
+
+  /* Padding is internal spacing, margins are external. See if you can figure
+  out the names for adjusting padding and margin on top and bottom. */
+  padding-left: 10px;
+  margin-right: 20px;
+}
