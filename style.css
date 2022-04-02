@@ -1,16 +1,24 @@
 body {
+  /* The first six hexadecimal digits are the red green and blue values, the
+  seventh and eighth are transparency. Your search engine may have a color
+  picker built in or you can use https://colorpicker.me/ */
   background-color: #deadbeef;
   color: #2b2b2b;
 }
 
+/* All h1 tags will use this styling. */
 h1 {
   text-align: center;
+  color: #871a1a;
 }
 
 h2 {
   text-align: center;
+  color: #114c2a;
 }
 
+/* Whenever we want to create a style outside of the normal HTML tags like h1 or
+body, we use a 'class' starting with a period. */
 .fancy {
   background-color: #2b2b2b2b;
   font-size: 200%;
@@ -19,8 +27,14 @@ h2 {
   /* Hereafter is a little bonus styling not covered in the workshop. */
   border-radius: 10px;
 
-  /* Padding is internal spacing, margins are external. See if you can figure
-  out the names for adjusting padding and margin on top and bottom. */
+  /* Padding is internal spacing, margins are external. You can see my spans are
+  a little lopsided, see if you can fix that, or see if you can figure out the
+  names for adjusting padding and margin on top and bottom. */
   padding-left: 10px;
   margin-right: 20px;
+
+  /* Writing pixels all the time seems pretty bunk, especially when people have
+  different sized screens. Try replacing 10px with 10% or 10vh or 10vw.  There
+  are a ton of different units available to you in CSS more on this here
+  https://developer.mozilla.org/en-US/docs/Web/CSS/length */
 }

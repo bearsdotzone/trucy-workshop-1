@@ -1,5 +1,5 @@
 <!-- This is a comment, everything between the arrows is ignored by the browser
-when displaying your web page, but will still appear with inspect element so
+when displaying your web page, but will still appear with inspect element, so
 don't expect to keep secrets this way. You can easily create a comment in VS
 Code by hitting ctrl + / -->
 
@@ -8,29 +8,55 @@ Code by hitting ctrl + / -->
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- Charset determines how the browser interprets the following code. UTF-8
-        is almost always the right call because it supports unicode, aka emoji
-        🐻 and characters for non-english languages -->
+    <!-- Charset determines how the browser interprets the text of our webpage.
+        UTF-8 is almost always the right call because it supports unicode, aka
+        emoji 🐻 and characters for non-english languages ò µ -->
     <title>HTML for Bears 🐻</title>
+    <!-- Although we refer to lots of things as links, link combines this page
+    with the style.css, whereas a hotlink with the 'a' tag would point to the
+    style but not use it. -->
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- a or anchor, is a hyperlink, a pointer to another webpage -->
     <a href="pagetwo.html">Page two!</a>
+    <!-- h1 is one of many types of header, just like an essay. h2-h6 are
+    headers of decreasing size. h1 is the top level, h2 is the second level,
+    etc. -->
     <h1>I'm writing an HTML website!</h1>
     <a href="https://github.com/bearsdotzone/trucy-workshop-1"
-      >Here's a link to the HTML for this website</a
+      >Here's a link to the HTML that makes this website</a
     >
     <h2>About Me</h2>
+    <!-- Span allows us to apply our 'fancy' css style to anything it contains. -->
     Hello! My name is <span class="fancy">bears!</span> I'm doing HTML.<br />
-    <em><b>Trans rights!</b></em
-    ><br />
-    <img src="Transgender_Pride_flag.png" width="120px" />
+    <!-- em is for emphasize, or colloquially, italicize.  -->
+    <!-- b is for bold -->
+    <em><b>Trans rights!</b> Trans rights</em>
+    <b><em>Trans rights!</em> Trans rights!</b>
+    <!-- br is a line break, like hitting return -->
+    <br />
+    <!-- img is an image, src points to a local file or a URL on the web for
+    display. Specifying only width or height will maintain your image's aspect
+    ratio. -->
+    <!-- alt is an optional but encouraged tag that will describe your image to
+    screen readers. If you want to learn more about making your website
+    accessible, both Chrome and Firefox have developer tools for that express
+    purpose. Lighthouse in Chrome and Accessibility in Firefox -->
+    <img
+      src="Transgender_Pride_flag.png"
+      width="120px"
+      alt="a trans pride flag"
+    />
     <br />
     Facts about me:
+    <!-- ul is an unordered list -->
+    <!-- a list contains li elements, literally meaning 'list item' -->
     <ul>
       <li>I like <span class="fancy">HTML</span></li>
       <li>I like bears</li>
       <li>
+        <!-- ol is an ordered list -->
         <ol>
           <li>I like lists in lists</li>
           <li>I like bears in lists</li>
@@ -45,6 +71,7 @@ Code by hitting ctrl + / -->
       <li>Famouse Oconnor</li>
     </ul>
     <br />
+    <!-- target="_blank" means we want to open this link in a new tab -->
     <a href="https://trucy.neocities.org/" target="_blank"
       >Click here for trucy</a
     >
