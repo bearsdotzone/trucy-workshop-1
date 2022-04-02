@@ -1,3 +1,5 @@
+/* CSS uses a different style for commenting but the function is the same. */
+
 body {
   /* The first six hexadecimal digits are the red green and blue values, the
   seventh and eighth are transparency. Your search engine may have a color
@@ -23,7 +25,6 @@ body, we use a 'class' starting with a period. */
   background-color: #2b2b2b2b;
   font-size: 200%;
 
-  /* CSS uses a different style for commenting but the function is the same. */
   /* Hereafter is a little bonus styling not covered in the workshop. */
   border-radius: 10px;
 
@@ -35,6 +36,6 @@ body, we use a 'class' starting with a period. */
 
   /* Writing pixels all the time seems pretty bunk, especially when people have
   different sized screens. Try replacing 10px with 10% or 10vh or 10vw.  There
-  are a ton of different units available to you in CSS more on this here
+  are a ton of different units available to you in CSS, more on this here
   https://developer.mozilla.org/en-US/docs/Web/CSS/length */
 }
